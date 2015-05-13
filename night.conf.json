@@ -1,0 +1,22 @@
+{
+  "src_folders": ["./tests/selenium/tests"],
+  "selenium": {
+    "start_process": false,
+    "sever_path": "./tests/selenium/server/selenium-server-standalone-2.45.0.jar",
+    "log_path": "./tests/selenium/server/",
+    "host": "127.0.0.1",
+    "port": 4444
+  },
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost:3000",
+      "selenium_host": "127.0.0.1",
+      "selenium_port": 4444,
+      "silent": true
+    },
+    "desiredCapabilities": {
+      "browserName": "firefox",
+      "javascriptEnabled": true
+    }
+  }
+}

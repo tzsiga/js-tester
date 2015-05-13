@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Server</title>
+    <script src='app.js'></script>
+    <script>
+      var aritm = new components.Aritmetics();
+    </script>
+  </head>
+  <body>
+    <h1>Example application</h1>
+    <input id='op1' name='op1' type='text'>
+    <select id='operand' name='operand'>
+      <option value='add'>+</option>
+      <option value='sub'>-</option>
+      <option value='mul'>*</option>
+      <option value='div'>/</option>
+    </select>
+    <input id='op2' name='op2' type='text'>
+    <input id='res' name='res' type='text'>
+
+    <br/>
+    <button id="run" name='run'>Calculate!</button>
+
+    <script type="text/javascript">
+      var iop1 = document.getElementById("op1");
+      var iop2 = document.getElementById("op2");
+      var ires = document.getElementById("res");
+      var run = document.getElementById("run");
+      var ioperand = document.getElementById("operand");
+
+      run.onclick = function() {
+        var op1 = parseInt(iop1.value),
+          op2 = parseInt(iop2.value),
+          operand = ioperand.options[ioperand.selectedIndex].value;
+
+        if (aritm.hasOwnProperty(operand)) {
+          var func = aritm[operand];
+          var res  = func.apply(aritm,[op1,op2]);
+          ires.value = res;
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "js-tester",
+  "version": "0.1.0",
+  "description": "js-tester",
+  "main": "server.js",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "del": "^1.1.1",
+    "express": "^4.12.3",
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-download": "0.0.1",
+    "gulp-karma": "0.0.4",
+    "gulp-mocha": "^2.0.1",
+    "gulp-nightwatch": "^0.1.1",
+    "gulp-uglify": "^1.2.0",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-html-reporter": "^0.2.6",
+    "karma-mocha": "^0.1.10",
+    "karma-mocha-reporter": "^1.0.2",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^2.2.4",
+    "q": "^2.0.3",
+    "run-sequence": "^1.1.0",
+    "webdriverio": "^2.4.5"
+  }
+}
